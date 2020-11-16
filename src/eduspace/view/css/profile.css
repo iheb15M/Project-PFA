@@ -1,0 +1,19 @@
+#close{
+-fx-background-color:  #2871FA;
+-fx-background-radius: 18px;
+ -fx-border-radius: 18px;
+}
+.input{
+-fx-background-color:  #2871FA;
+-fx-border-width: 0 0 1 0;
+-fx-border-color:   #343434;
+}
+.input:focused {
+-fx-border-width: 0 0 2 0;
+}
+.btn{
+-fx-background-color:  #E6E6E6;
+-fx-background-radius: 10px;
+ -fx-border-radius: 10px;
+
+}

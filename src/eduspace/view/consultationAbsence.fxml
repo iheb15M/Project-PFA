@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="body" prefHeight="912.0" prefWidth="924.0" style="-fx-background-color: #e6e6e6;"
+            stylesheets="@css/absence.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="eduspace.controller.ConsultationAbsenceController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2871fa" height="106.0" stroke="#2871fa" strokeType="INSIDE"
+                 width="924.0" AnchorPane.bottomAnchor="734.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                 AnchorPane.topAnchor="72.0"/>
+      <Text fill="WHITE" layoutX="95.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            text="Consultation d'absence" AnchorPane.bottomAnchor="755.0" AnchorPane.leftAnchor="49.0"
+            AnchorPane.rightAnchor="339.0" AnchorPane.topAnchor="90.0">
+         <font>
+            <Font name="Roboto Condensed" size="50.0"/>
+         </font>
+      </Text>
+      <Text fill="#343434" layoutX="426.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trier par:"
+            AnchorPane.bottomAnchor="657.0" AnchorPane.leftAnchor="425.5" AnchorPane.rightAnchor="370.0"
+            AnchorPane.topAnchor="239.0">
+         <font>
+            <Font name="Roboto light" size="15.0"/>
+         </font>
+      </Text>
+      <ChoiceBox layoutX="495.0" layoutY="236.0" prefWidth="130.0" style="-fx-background-color: #e6e6e6;"
+                 AnchorPane.topAnchor="236.0"/>
+      <Line endX="19.0" layoutX="598.0" layoutY="261.0" startX="-100.0" stroke="#343434"/>
+      <TextField layoutX="691.0" layoutY="235.0" prefHeight="24.5" prefWidth="186.37" promptText="Recherche par nom"
+                 style="-fx-background-color: #e6e6e6;" AnchorPane.bottomAnchor="653.5" AnchorPane.leftAnchor="691.0"
+                 AnchorPane.rightAnchor="46.59999999999991" AnchorPane.topAnchor="236.0"/>
+      <Line endX="78.0" layoutX="792.0" layoutY="262.0" startX="-100.0" stroke="#343434"/>
+      <Button fx:id="save" ellipsisString="" mnemonicParsing="false" prefHeight="44.0" prefWidth="219.0"
+              style="-fx-border-radius: 10; -fx-background-color: #2871FA;" text="Enregistrer" textFill="WHITE"
+              AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="677.0" AnchorPane.rightAnchor="28.0"
+              AnchorPane.topAnchor="801.0">
+         <font>
+            <Font name="Roboto light" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="33.0" fitWidth="122.0" layoutX="448.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="797.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="873.0">
+         <image>
+            <Image url="@img/dash/eduspace.png" />
+         </image></ImageView>
+      <TableView fx:id="table" fixedCellSize="0.0" layoutX="172.0" layoutY="344.0" prefHeight="470.0" prefWidth="847.0" AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="301.0">
+        <columns>
+          <TableColumn fx:id="cin" prefWidth="250.0" resizable="false" text="CIN" />
+          <TableColumn fx:id="nom" minWidth="0.0" prefWidth="250.0" resizable="false" text="Nom et prenom" />
+           <TableColumn fx:id="poste" prefWidth="250.0" resizable="false" text="Poste" />
+           <TableColumn fx:id="p" prefWidth="96.0" resizable="false" text="P" />
+        </columns>
+      </TableView>
+      
+   </children>
+</AnchorPane>

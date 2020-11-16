@@ -1,0 +1,40 @@
+#sidebar{
+-fx-background-color: #343434;
+}
+.icon:hover{
+ -fx-cursor: hand;
+}
+#sidemenu{
+-fx-background-color: #2871FA;
+-fx-background-radius: 20px 0px 0px 20px;
+ -fx-border-radius: 20px 0px 0px 20px;
+}
+#content{
+-fx-background-color: #E6E6E6;
+-fx-background-radius: 20px 0px 0px 20px;
+ -fx-border-radius: 20px 0px 0px 20px;
+}
+#setting{
+-fx-background-color: #E6E6E6;
+-fx-background-radius: 0px 10px 10px 10px;
+ -fx-border-radius: 10px ;
+}
+.subSettingBtn{
+-fx-background-color:rgb(0, 0, 0,0);
+-fx-background-color: #E6E6E6;
+-fx-background-radius: 0px 10px 10px 10px;
+ -fx-border-radius: 10px ;
+}
+.subSettingBtn:hover{
+-fx-background-color:rgb(0, 0, 0,0.1);
+
+}
+.sidemenuBtn{
+-fx-background-color: #2871FA;
+}
+.sidemenuBtn:hover{
+-fx-background-color: #4283FC;
+}
+.active{
+#4283FC;
+}

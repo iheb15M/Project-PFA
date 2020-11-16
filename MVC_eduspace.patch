@@ -1,0 +1,545 @@
+Index: src/eduspace/view/gestPoste.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/eduspace/view/gestPoste.fxml	(date 1585801034552)
++++ src/eduspace/view/gestPoste.fxml	(date 1585801034552)
+@@ -0,0 +1,16 @@
++<?xml version="1.0" encoding="UTF-8"?>
++
++<?import javafx.scene.layout.AnchorPane?>
++<?import javafx.scene.text.Font?>
++<?import javafx.scene.text.Text?>
++
++
++<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
++   <children>
++      <Text layoutX="238.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion de poste" wrappingWidth="171.13671875">
++         <font>
++            <Font size="69.0" />
++         </font>
++      </Text>
++   </children>
++</AnchorPane>
+Index: src/eduspace/vendor/Routing.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/eduspace/vendor/Routing.java	(revision eb6724a1f9c5468936df606a4a9a1553a5e84b3f)
++++ src/eduspace/vendor/Routing.java	(date 1585801527124)
+@@ -4,6 +4,7 @@
+ import javafx.fxml.FXMLLoader;
+ import javafx.scene.Parent;
+ import javafx.scene.Scene;
++import javafx.scene.layout.Pane;
+ import javafx.stage.Stage;
+ import javafx.stage.StageStyle;
+ 
+@@ -30,6 +31,13 @@
+         primaryStage.setScene(scene);
+     }
+ 
++    public static void RedirectSubScene(Pane pane , String view) throws IOException {
++        String to ="../view/"+view+".fxml";
++        Pane newLoadedPane = FXMLLoader.load(Routing.class.getResource(to));
++        pane.getChildren().clear();
++        pane.getChildren().add(newLoadedPane);
++    }
++
+     public static void middlewareLogin(String pseudo) throws SQLException, IOException {
+        user user = new user(pseudo);
+        switch (user.getType()) {
+Index: src/eduspace/view/gestSalle.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/eduspace/view/gestSalle.fxml	(date 1585801435987)
++++ src/eduspace/view/gestSalle.fxml	(date 1585801435987)
+@@ -0,0 +1,16 @@
++<?xml version="1.0" encoding="UTF-8"?>
++
++<?import javafx.scene.layout.AnchorPane?>
++<?import javafx.scene.text.Font?>
++<?import javafx.scene.text.Text?>
++
++
++<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
++   <children>
++      <Text layoutX="238.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion de salle" wrappingWidth="171.13671875">
++         <font>
++            <Font size="69.0" />
++         </font>
++      </Text>
++   </children>
++</AnchorPane>
+Index: src/eduspace/view/dashboaredSuper.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/eduspace/view/dashboaredSuper.fxml	(revision eb6724a1f9c5468936df606a4a9a1553a5e84b3f)
++++ src/eduspace/view/dashboaredSuper.fxml	(date 1585801435918)
+@@ -7,6 +7,7 @@
+ <?import javafx.scene.image.Image?>
+ <?import javafx.scene.image.ImageView?>
+ <?import javafx.scene.layout.AnchorPane?>
++<?import javafx.scene.layout.Pane?>
+ <?import javafx.scene.layout.VBox?>
+ <?import javafx.scene.text.Font?>
+ <?import javafx.scene.text.Text?>
+@@ -62,9 +63,9 @@
+                   </VBox>
+                </children>
+             </AnchorPane>
+-            <VBox layoutX="99.0" layoutY="150.0" prefWidth="345.0" spacing="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="150.0">
++            <VBox fx:id="sidemenucontent" layoutX="99.0" layoutY="150.0" prefWidth="345.0" spacing="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="150.0">
+                <children>
+-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Super Admin" textAlignment="CENTER" wrappingWidth="343.13671875">
++                  <Text fx:id="tiltesidemenu" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Super Admin" textAlignment="CENTER" wrappingWidth="343.13671875">
+                      <font>
+                         <Font name="Roboto Regular" size="25.0" />
+                      </font>
+@@ -72,15 +73,26 @@
+                         <Insets bottom="20.0" top="20.0" />
+                      </VBox.margin>
+                   </Text>
+-                  <Button mnemonicParsing="false" prefHeight="67.0" prefWidth="345.0" text="Button" />
+-                  <Button mnemonicParsing="false" prefHeight="67.0" prefWidth="345.0" text="Button" />
+-                  <Button mnemonicParsing="false" prefHeight="67.0" prefWidth="345.0" text="Button" />
++                  <Button fx:id="GestRH" mnemonicParsing="false" onAction="#goToGestRH" prefHeight="67.0" prefWidth="345.0" styleClass="sidemenuBtn" text="Gestion de RH" textAlignment="CENTER" textFill="WHITE">
++                     <font>
++                        <Font name="Roboto Condensed" size="25.0" />
++                     </font></Button>
++
++                  <Button  mnemonicParsing="false" prefHeight="67.0" prefWidth="345.0" styleClass="sidemenuBtn" text="Gestion de postes" textAlignment="CENTER" textFill="WHITE" onAction="#goToGestPoste">
++                     <font>
++                        <Font name="Roboto Condensed" size="25.0" />
++                     </font></Button>
++
++                  <Button onAction="#goToGestSalle" mnemonicParsing="false" prefHeight="67.0" prefWidth="345.0" styleClass="sidemenuBtn" text="Gestion de salles" textAlignment="CENTER" textFill="WHITE">
++                     <font>
++                        <Font name="Roboto Condensed" size="25.0" />
++                     </font></Button>
+                </children>
+             </VBox>
+          </children></AnchorPane>
+-      <AnchorPane fx:id="content" layoutX="438.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="444.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
++      <Pane fx:id="content" layoutX="438.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="444.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+-            <fx:include fx:id="subScene" source="superDashMain.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+-         </children></AnchorPane>
++
++         </children></Pane>
+    </children>
+ </AnchorPane>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision eb6724a1f9c5468936df606a4a9a1553a5e84b3f)
++++ .idea/workspace.xml	(date 1585801444875)
+@@ -2,9 +2,18 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="MVC eduspace">
++      <change afterPath="$PROJECT_DIR$/src/eduspace/controller/GestRHController.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/eduspace/view/gestPoste.fxml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/eduspace/view/gestSalle.fxml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Eduspace/eduspace/controller/dashboaredController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Eduspace/eduspace/controller/dashboaredController.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Eduspace/eduspace/vendor/Routing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Eduspace/eduspace/vendor/Routing.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Eduspace/eduspace/view/css/dashboared.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Eduspace/eduspace/view/css/dashboared.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/eduspace/controller/dashboaredController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/controller/dashboaredController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/eduspace/vendor/Routing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/vendor/Routing.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/eduspace/view/css/dashboared.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/view/css/dashboared.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/eduspace/view/dashboaredSuper.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/view/dashboaredSuper.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/eduspace/view/superDashMain.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/view/superDashMain.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/eduspace/view/superDashMain.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/view/gestRH.fxml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -58,8 +67,8 @@
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
+-        <option value="Class" />
+         <option value="FxmlFile" />
++        <option value="Class" />
+       </list>
+     </option>
+   </component>
+@@ -81,6 +90,10 @@
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="UPDATE_TYPE" value="MERGE" />
++  </component>
++  <component name="GithubDefaultAccount">
++    <option name="defaultAccountId" value="8a4872cf-7af1-4add-8660-138698733d79" />
+   </component>
+   <component name="IgnoredFileRootStore">
+     <option name="generatedRoots">
+@@ -125,9 +138,6 @@
+     <key name="ExtractSuperBase.RECENT_KEYS">
+       <recent name="eduspace.controller" />
+     </key>
+-    <key name="CopyFile.RECENT_KEYS">
+-      <recent name="C:\Users\iheb.DESKTOP-OHKQBFH.000\eclipse-workspace\Eduspace\src\eduspace\view" />
+-    </key>
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\iheb\eclipse-workspace\Eduspace\src\eduspace\view" />
+       <recent name="C:\Users\iheb\eclipse-workspace\Eduspace\src\eduspace\vendor" />
+@@ -135,6 +145,9 @@
+       <recent name="C:\Users\iheb\eclipse-workspace\Eduspace\src\sample\view" />
+       <recent name="C:\Users\iheb\eclipse-workspace\Eduspace\src\sample\view*" />
+     </key>
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\iheb.DESKTOP-OHKQBFH.000\eclipse-workspace\Eduspace\src\eduspace\view" />
++    </key>
+   </component>
+   <component name="RunManager">
+     <configuration default="true" type="Applet" factoryName="Applet">
+@@ -333,7 +346,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1585795722685</updated>
+     </task>
+-    <option name="localTasksCounter" value="16" />
++    <task id="LOCAL-00016" summary="MVC eduspace">
++      <created>1585796090108</created>
++      <option name="number" value="00016" />
++      <option name="presentableId" value="LOCAL-00016" />
++      <option name="project" value="LOCAL" />
++      <updated>1585796090109</updated>
++    </task>
++    <option name="localTasksCounter" value="17" />
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
+@@ -375,22 +395,22 @@
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585767361498" />
+-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1585795600318">
++    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1585799481556">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585795600318" />
++    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585799481556" />
+     <state x="609" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583243629235">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="609" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583243629235" />
+-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583975498239">
++    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585799855457">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583975498239" />
+-    <state x="613" y="116" key="CommitChangelistDialog2" timestamp="1585795720257">
++    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585799855457" />
++    <state x="613" y="116" key="CommitChangelistDialog2" timestamp="1585796164986">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state x="613" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585795720257" />
++    <state x="613" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585796164986" />
+     <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1585698264092">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+@@ -399,26 +419,30 @@
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="782" y="419" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584020760829" />
++    <state x="820" y="443" key="Github.Dialog.Accounts.Choose" timestamp="1585796110824">
++      <screen x="0" y="0" width="1920" height="1040" />
++    </state>
++    <state x="820" y="443" key="Github.Dialog.Accounts.Choose/0.0.1920.1040@0.0.1920.1040" timestamp="1585796110824" />
+     <state x="830" y="413" width="260" height="286" key="Github.ShareDialog" timestamp="1583275962826">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="830" y="413" width="260" height="286" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583275962826" />
+-    <state width="1877" height="207" key="GridCell.Tab.0.bottom" timestamp="1585795942455">
++    <state width="1877" height="207" key="GridCell.Tab.0.bottom" timestamp="1585801441712">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585795942455" />
+-    <state width="1877" height="207" key="GridCell.Tab.0.center" timestamp="1585795942455">
++    <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585801441712" />
++    <state width="1877" height="207" key="GridCell.Tab.0.center" timestamp="1585801441712">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585795942455" />
+-    <state width="1877" height="207" key="GridCell.Tab.0.left" timestamp="1585795942455">
++    <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585801441712" />
++    <state width="1877" height="207" key="GridCell.Tab.0.left" timestamp="1585801441712">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585795942455" />
+-    <state width="1877" height="207" key="GridCell.Tab.0.right" timestamp="1585795942455">
++    <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585801441712" />
++    <state width="1877" height="207" key="GridCell.Tab.0.right" timestamp="1585801441712">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585795942455" />
++    <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585801441712" />
+     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1583325994242">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+@@ -451,18 +475,18 @@
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="807" y="435" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583797060813" />
+-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1585767712597">
++    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1585796174987">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585767712597" />
++    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585796174987" />
+     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1585796035198">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585796035198" />
+-    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583275969771">
++    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585796145720">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583275969771" />
++    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585796145720" />
+     <state x="746" y="311" key="git4idea.merge.GitMergeDialog" timestamp="1583275281635">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+Index: out/production/Eduspace/eduspace/view/css/dashboared.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/Eduspace/eduspace/view/css/dashboared.css	(revision eb6724a1f9c5468936df606a4a9a1553a5e84b3f)
++++ out/production/Eduspace/eduspace/view/css/dashboared.css	(date 1585797526482)
+@@ -28,4 +28,10 @@
+ .subSettingBtn:hover{
+ -fx-background-color:rgb(0, 0, 0,0.1);
+ 
++}
++.sidemenuBtn{
++-fx-background-color: #2871FA;
++}
++.sidemenuBtn:hover{
++-fx-background-color: #4283FC;
+ }
+\ No newline at end of file
+Index: src/eduspace/view/css/dashboared.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/eduspace/view/css/dashboared.css	(revision eb6724a1f9c5468936df606a4a9a1553a5e84b3f)
++++ src/eduspace/view/css/dashboared.css	(date 1585797526482)
+@@ -28,4 +28,10 @@
+ .subSettingBtn:hover{
+ -fx-background-color:rgb(0, 0, 0,0.1);
+ 
++}
++.sidemenuBtn{
++-fx-background-color: #2871FA;
++}
++.sidemenuBtn:hover{
++-fx-background-color: #4283FC;
+ }
+\ No newline at end of file
+Index: src/eduspace/controller/dashboaredController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/eduspace/controller/dashboaredController.java	(revision eb6724a1f9c5468936df606a4a9a1553a5e84b3f)
++++ src/eduspace/controller/dashboaredController.java	(date 1585801496018)
+@@ -1,45 +1,67 @@
+ package eduspace.controller;
+ 
++import eduspace.vendor.Routing;
+ import eduspace.vendor.Visibility;
++import javafx.event.ActionEvent;
+ import javafx.fxml.FXML;
++import javafx.fxml.FXMLLoader;
+ import javafx.scene.*;
++import javafx.scene.control.Button;
+ import javafx.scene.image.ImageView;
+ import javafx.scene.input.MouseEvent;
+ import javafx.scene.layout.*;
+ 
++import java.io.IOException;
++
++
+ public class dashboaredController {
+-
++    @FXML
++    public AnchorPane subScene;
++    @FXML
++    public Pane content;
+     @FXML
+     private AnchorPane sidebar;
+     @FXML
+     private AnchorPane sidemenu;
+     @FXML
+     private AnchorPane body;
+-    @FXML
+-    private AnchorPane content;
++
+     @FXML
+     private AnchorPane setting;
+     @FXML
+     private ImageView settingBtn;
+-
++    @FXML
++    private Button GestRH;
+ 
+-public void initialize() {
+-    subMenuSetting();
++    public void initialize() {
++        subMenuSetting();
+ 
+-}
++    }
+ 
+-public void subMenuSetting(){
+-    setting.setVisible(false);
+-    settingBtn.setPickOnBounds(true);
+-    settingBtn.setOnMouseClicked((MouseEvent e) -> {
+-        if(setting.isVisible()){
+-            Visibility.hide(setting);
+-        }else {
+-            Visibility.show(setting);
+-        }
+-    });
+-}
++    public void subMenuSetting() {
++        setting.setVisible(false);
++        settingBtn.setPickOnBounds(true);
++        settingBtn.setOnMouseClicked((MouseEvent e) -> {
++            if (setting.isVisible()) {
++                Visibility.hide(setting);
++            } else {
++                Visibility.show(setting);
++            }
++        });
++    }
+ 
+ 
++    public void goToGestRH(ActionEvent actionEvent) throws IOException {
++
++       Routing.RedirectSubScene(content,"gestRH");
+ 
++    }
++
++    public void goToGestPoste(ActionEvent actionEvent) throws IOException {
++        Routing.RedirectSubScene(content,"gestPoste");
++    }
++
++    public void goToGestSalle(ActionEvent actionEvent) throws IOException {
++        Routing.RedirectSubScene(content,"gestSalle");
++    }
+ }
+Index: src/eduspace/view/superDashMain.fxml
+===================================================================
+--- src/eduspace/view/superDashMain.fxml	(revision eb6724a1f9c5468936df606a4a9a1553a5e84b3f)
++++ src/eduspace/view/gestRH.fxml	(date 1585801045635)
+@@ -1,13 +1,16 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import java.lang.*?>
+-<?import java.util.*?>
+-<?import javafx.scene.*?>
+-<?import javafx.scene.control.*?>
+-<?import javafx.scene.layout.*?>
++<?import javafx.scene.layout.AnchorPane?>
++<?import javafx.scene.text.Font?>
++<?import javafx.scene.text.Text?>
+ 
+-<AnchorPane xmlns="http://javafx.com/javafx"
+-            xmlns:fx="http://javafx.com/fxml"
+-            prefHeight="912" prefWidth="924">
+ 
++<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eduspace.controller.GestRHController">
++   <children>
++      <Text layoutX="238.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion de RH" wrappingWidth="171.13671875">
++         <font>
++            <Font size="69.0" />
++         </font>
++      </Text>
++   </children>
+ </AnchorPane>
+Index: src/eduspace/controller/GestRHController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/eduspace/controller/GestRHController.java	(date 1585800338513)
++++ src/eduspace/controller/GestRHController.java	(date 1585800338513)
+@@ -0,0 +1,4 @@
++package eduspace.controller;
++
++public class GestRHController {
++}
+diff --git out/production/Eduspace/eduspace/controller/dashboaredController.class out/production/Eduspace/eduspace/controller/dashboaredController.class
+index d81c568d3817378dcd206694cfec24f7f885f2eb..07a55c3fd0f62cd12c18473b76bf23ebf424f550
+GIT binary patch
+literal 2653
+zc$}S9>sDJu6#fPRCxk<jQUpPu6~P92IoNt>OIsz#O~XZkSn)c^8OXrNOg!fV!8h><
+z{OwvU?CK96z~wW!+;b8V2m#R_IWx0o@9*2QFEjb`?^k~Sc#JTCHndxa+2}wgLu!v7
+zaL40n*ICQ&i9*QG`BW+yK4)l8Pi`d;N0)_!jc%i!7H%ad^MY^+T7|y$JmEVo4~lus
+zec{g4g$&n%N`6JCN=}5KRJ&aS)MMisk_=W*l`-7P8vdO_CnyLd$d4mk37uJ0C~AM5
+zD>0M6b@W=eVWSVPF^pcW&X6GJEg8tXM~hf`dvePV57>AegVkL_oCy_So#mD#zAKz%
+z^WBo-M`C^h!xlztj2h<Q%aj?CguE^b`)ewrE6NReDcZMeyooUiXpt+|__LVKUNwF*
+zlPBJZ1EE4^-h7uL96xex+{OgnX1GqoYidPT0x{>21Hz?~r7tnAMkH-x5>u24;|J|B
+z47E%}l!Q3$(kXUD5N<3ba379^X&dk00mDH3K*Zr{-`OCmD7C2#;Yyz>Dp$$p3?ze-
+zzL+E1D8yXo69PFJ$GZ$&hId^Dp)j@ZzKsv?h@>*8r<v+>JAo&dvGCN!Gf?RcHM<ol
+zOHYPJR2D_)l39O~H>=teGp6F7;3FHe1|}91H6=G5)Q>Q@QBk2Ri5mH=Qaa?J)GA=;
+zJ;B>KEP2kti<Rt*sdXaDbKjuQtVA6_xOwf8Bb|#;NEt@XdQz(mCsPSStq3GGr;W$S
+ztW;vPQpyW|lSfDI&FTX8wzx0Nx+aW;MM>^VUA@?-GfdA*?#Z7_6Yc6vUH7f2m}U#+
+zxKT+_v>3X1LvX5!&MOn{{9!?qqi9(m(;HFFrFNFr>N^ZQC+tzuPpxy@Gshe7cq#Al
+z@w4~K_%y><Q%0pKQ+Y+b(eRfM#La)vBhp;R3;Qd)T#IQUrz?IzEJ(8$Y!$@&29nA?
+zqjeaBJ}<9`u&CW2*@=7t1-KT3jU7;Hj5TUqssp_*oNRO?vfw)uPVG~1beB%A{z_-h
+z8C40YeI1Nvwcf9kTlCRIhMPxa@&7ifl$YC1p5L9L{N-dQW>S!p##WaUWhiN3-@H1W
+zjW4mC!Zw4wtd#KQJRSssDyPgaaiw5b@M}-T#j4bWRb{%X<McLyz6=>8={rZOP8vU^
+zk(v9lN!Et>b9!x9Xdzo{A-mQ>Mz7R4*%FqUWEPDb(drXgIW#gFJEndI`!zE8w5ANY
+zF|+iws|r}bYIKyfy79xh@iDB1aUzPu1Y)?|5}>;dut}O`Z*=N6*zLzi(byk5#*i7O
+zUg0KijJF!dy@UyhWE^*p!d;Az3k`<RI>S0XBMZZjq0xAgAjI3fcV6ONv!9R9MVGcg
+z>91<mP|R!tIYQf{d5p%->G#D2$PZf}KO^MlS4MvEACPAWIde7SRGaC9TD*5?H2T9P
+z-p6?FXY`oaOFaH1Vx!rIhO7NlwC};Z+I^U&{|ygLaSqoxhw&A@Cgg7-&bGczvi~;n
+Z_&a=G%MK@55ql^>MP4#!{D1(1{{WwSb@BiJ
+
+diff --git out/production/Eduspace/eduspace/vendor/Routing.class out/production/Eduspace/eduspace/vendor/Routing.class
+index 6437b98cb58749481045751fec1661ecb83498d4..11df4dbfaf37f700c081e3e7e4a8c0e8da933a24
+GIT binary patch
+literal 2686
+zc$|$^TXz#x6#h<{cG57=5=x<!i$DuWdKpl>K(H!>N_0|6Qp!!mY37g&oy>%pNz-~m
+zRK)9AKI$*<!6#s?a$C#gv;W8!miwGc+q6y9ht4@UXYYN!{q67U)4!fS{R6-W{1it7
+zZ3?0)+R?$#ebbmXG}~}W+WFa=ycjTaoU$A%7-MKlre-=3L#KkciY-tXc5$=jSB)aq
+z=DB0Ko|boOf#sAK)T(Dy3~#Xz7$wfoql>^d7BpY{*5qm?hHVVdvRmPC3frw>I}!}>
+zJU1<mj-GZIb|&>zM1{bk*qPK!96i{npjX8%0XnfUHpTVJZaqOs_NnN{3xu^|%<*y8
+zDH_2gD=5>9?47`8INa)xjZ1Ot#Xbf5RlJA;3|*@R<F?^boGm3D<hk$GydnWOxOr5E
+z2inEFP7x1bK*6Aj!#Kjw8|HCip<-(jmvg%A8YcHB7n>%l5trSYF*d4|QIKNTvCK!2
+zJ6xMGJnjSvhMI_y8wK$d1szc_3XLjV=2odpC1+W&d`!hlV!6F;nL#;@G>!|Eyu#3*
+z)LR^pIdi5_n%7jkjuQ+qp9k^~B7dEST&7AY$S~|)vt=8LBqECGkStE(4HaW}vqA27
+z*|JSKieWIBS`JurZJScJsGh`v&%JqL*5<n92bnE+8>bbFt2iTca^OEbDA}UT4No{u
+zsCWnGNcM(lt`lNNcIv8vcZu$mOHgr5ZfiA)7)KVmU@IYJlPb<*ib0_qrWdQ?J|tTT
+zERTYMX%!bSv*s=~42aRP;gfPrE^lKthRcMwaB=EvUie;BaZMoZ;J0dq?Z@x|snjHo
+zS(gfA7HU-~riOo)ZaI9iR+;7Av`C-Sp}R%Ho-sU2{0<kRLD?c{_vxG5^vs&tHeK!%
+zWzg<7?qdAxLXlS`;R;HjKsC$NvgcQJ=%{&%*9D9X#4tnxY6cw*X;3j*%1@lvP+Lzc
+zu@RxmouyEl4Rxul(`A$RGOaofp{yFhv43+vhOG{-%e!k%N#m}HWtujx6HeVNS(Ix>
+z)#o*na*7JIh>Ti@NJJtsi*q@nD$AkZV=|Sn{9CqGxS%)D7dut7!%iJ9$R0Fdi3+M=
+zrACDxk#O2|13&PLYK{kG*YvwO@I@SV@TG#UM63LoVPG|L%b9oQct}8_drla|!1Wdx
+zerdiFp<yHFIm4lR{Q=!|=W5j!Om5~VZbu9AYb`F{#t`F%Z5OOSJS^WZY#SZbgrYPy
+zDjF&gk#!vI$zIJ#hu={b`CsrA{J^m9-%Y8a4PzXj&KaR+rwwt@RcRI%ZB&l*X42RJ
+zCLUY*en`JG8X1l4=|^DqX%fNp&<NOukLas53}9fE#!gx-l9h0t2%Wpr51}NsK1SCA
+zC`;I}8Yh7$eRtA#7kTbR7y6oFcEgmAIQ>Ow<p$Z%BOFG*3q^X5q@R)}^h9iE340#n
+z;Gan5o*{i@_yLCRJ;2d>kMQy&ojkIHS67ejCCI=Y3bL0Tg?$*rehkywDUMG!0;3Fz
+zMupzLn>3@FOYr7kQ-nd{u>yy9YzF6|8iKn+qll3jlHhWQ*zhvAlauKsoO*({7{p}c
+z3C>1vX+5w*bnE~fI7sjgBZ(tTz*4vc50JC61g7AigcuS3dcddMwZMWE)|O~T#F%-8
+z>=i2Ndpfa}%SFZr--X|0P$B|g(I@q5H1-T9E-m58uV`-@+Z*oh5&MlPdJ^wbU4KJN
+z*7v@YmdK)?G$QbJVhHDm${fjU3diW}I4(2kl`@<`O;X%R`}3$%)CH-E_UA|{$STOQ
+zc#rZoA?8wb5iC+ZF?_Nj&{T+I>-P4`4>7#G?dOL$dS3#(E>$g#=_2!P0`{pS`7?Y@
+WV~i|r)8Ad(lXeW>;(PpvzJCBF?0{ha
+

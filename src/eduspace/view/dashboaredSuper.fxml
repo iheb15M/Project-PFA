@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="body" prefHeight="912.0" prefWidth="1368.0" stylesheets="@css/dashboared.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eduspace.controller.dashboaredController">
+   <children>
+      <AnchorPane fx:id="sidebar" prefWidth="115.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="affProfile" layoutX="8.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true"
+                       styleClass="icon" x="31.0" y="351.0" AnchorPane.bottomAnchor="342.0" AnchorPane.leftAnchor="39.0"
+                       AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="340.0">
+               <image>
+                  <Image url="@img/dash/001-user.png"/>
+               </image>
+               <viewport>
+                  <Rectangle2D/>
+               </viewport>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="8.0" layoutY="90.0" pickOnBounds="true"
+                       preserveRatio="true" styleClass="icon" x="31.0" y="351.0" AnchorPane.bottomAnchor="342.0"
+                       AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="440.0">
+               <image>
+                  <Image url="@img/dash/002-notification.png"/>
+               </image>
+            </ImageView>
+            <ImageView fx:id="settingBtn" fitHeight="30.0" fitWidth="30.0" layoutY="189.0" pickOnBounds="true"
+                       preserveRatio="true" styleClass="icon" x="31.0" y="351.0" AnchorPane.bottomAnchor="342.0"
+                       AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="540.0">
+               <image>
+                  <Image url="@img/dash/003-gear.png"/>
+               </image>
+            </ImageView>
+            <ImageView fx:id="logoutBtn" fitHeight="30.0" fitWidth="30.0" layoutX="8.0" layoutY="489.0"
+                       pickOnBounds="true" preserveRatio="true" styleClass="icon" x="31.0" y="351.0"
+                       AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="46.0"
+                       AnchorPane.topAnchor="840.0">
+               <image>
+                  <Image url="@img/dash/004-logout.png"/>
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="sidemenu" layoutX="99.0" prefWidth="361.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="setting" layoutX="-28.0" layoutY="564.0" prefHeight="91.0" prefWidth="159.0"
+                        styleClass="hide" AnchorPane.bottomAnchor="257.0" AnchorPane.leftAnchor="-28.0"
+                        AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="564.0">
+               <children>
+                  <VBox layoutX="14.0" layoutY="8.0" prefHeight="86.0" prefWidth="159.0" AnchorPane.bottomAnchor="-33.0"
+                        AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="159.0" styleClass="subSettingBtn"
+                                text="Compte">
+                           <font>
+                              <Font name="Roboto Light" size="12.0"/>
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="159.0" styleClass="subSettingBtn"
+                                text="Mot de passe">
+                           <font>
+                              <Font name="Roboto Light" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <VBox fx:id="sidemenucontent" layoutX="99.0" layoutY="150.0" prefHeight="403.0" prefWidth="345.0" spacing="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="150.0">
+               <children>
+                  <AnchorPane prefHeight="67.0" prefWidth="345.0" style="-fx-background-color: #528DFC;">
+                     <children>
+                        <Text fx:id="tiltesidemenu" fill="WHITE" layoutX="1.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Super Admin" textAlignment="CENTER" wrappingWidth="343.13671875" AnchorPane.bottomAnchor="19.896484375" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="0.86328125" AnchorPane.topAnchor="17.806640625">
+                           <font>
+                              <Font name="Roboto Regular" size="25.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="GestRH" mnemonicParsing="false" onAction="#goToGestRH" prefHeight="67.0" prefWidth="345.0" styleClass="sidemenuBtn" text="Gestion de RH" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Condensed" size="25.0" />
+                     </font></Button>
+
+                  <Button mnemonicParsing="false" onAction="#goToGestPoste" prefHeight="67.0" prefWidth="345.0" styleClass="sidemenuBtn" text="Gestion de postes" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Condensed" size="25.0" />
+                     </font></Button>
+
+                  <Button mnemonicParsing="false" onAction="#goToGestSalle" prefHeight="67.0" prefWidth="345.0" styleClass="sidemenuBtn" text="Gestion de salles" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Condensed" size="25.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#goToGestDomaine" prefHeight="67.0" prefWidth="345.0" styleClass="sidemenuBtn" text="Gestion de domaines" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Condensed" size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+      <Pane fx:id="content" layoutX="438.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="444.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+
+         </children></Pane>
+   </children>
+</AnchorPane>

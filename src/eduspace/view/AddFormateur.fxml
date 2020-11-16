@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="body" cache="true" cacheHint="SPEED" depthTest="ENABLE" prefHeight="912" prefWidth="924"
+            style="-fx-background-color: #dcdcdc;" stylesheets="css/gestRH.css" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="eduspace.controller.GestFormateurController">
+   <children>
+      <AnchorPane layoutY="57.0" prefHeight="115.0" prefWidth="200.0" style="-fx-background-color: #2871FA;"
+                  AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="57.0">
+         <children>
+            <Text fill="#e6e6e6" layoutX="56.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                  text="Gestion de Formateur" wrappingWidth="524.13671875" AnchorPane.bottomAnchor="28.79296875"
+                  AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="347.86328125" AnchorPane.topAnchor="27.61328125">
+               <font>
+                  <Font name="Roboto Condensed" size="50.0"/>
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Label layoutX="30.0" layoutY="244.0" text="Nom et Prenom" AnchorPane.leftAnchor="30.0"
+             AnchorPane.topAnchor="244.0">
+         <font>
+            <Font name="Roboto Condensed" size="25.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="nom" layoutX="323.0" layoutY="236.0" prefHeight="35.5" prefWidth="260.0" promptText="Nom"
+                 style="-fx-background-color: #dcdcdc;" styleClass="input" AnchorPane.leftAnchor="303.0"
+                 AnchorPane.topAnchor="236.0">
+         <font>
+            <Font name="Roboto Light" size="20.0"/>
+         </font>
+      </TextField>
+      <TextField fx:id="prenom" layoutX="638.0" layoutY="234.0" prefHeight="35.5" prefWidth="260.0" promptText="Prenom"
+                 style="-fx-background-color: #dcdcdc;" styleClass="input" AnchorPane.leftAnchor="638.0"
+                 AnchorPane.topAnchor="236.0">
+         <font>
+            <Font size="20.0"/>
+         </font>
+      </TextField>
+      <Button fx:id="Addbtn" layoutX="697.0" layoutY="830.0" mnemonicParsing="false" onAction="#submitAdd"
+              prefHeight="48.0" prefWidth="190.0" text="Ajouter" textFill="WHITE">
+         <font>
+            <Font name="Roboto Condensed" size="20.0"/>
+         </font>
+      </Button>
+      <Label layoutX="30.0" layoutY="322.0" text="Date de Naissance" AnchorPane.leftAnchor="30.0"
+             AnchorPane.topAnchor="322.0">
+         <font>
+            <Font name="Roboto Condensed" size="25.0"/>
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="396.0" text="CIN" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="400.0">
+         <font>
+            <Font name="Roboto Condensed" size="25.0"/>
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="489.0" text="Email" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="478.0">
+         <font>
+            <Font name="Roboto Condensed" size="25.0"/>
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="556.0" text="Telephone" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="556.0">
+         <font>
+            <Font name="Roboto Condensed" size="25.0"/>
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="622.0" text="Adresse" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="634.0">
+         <font>
+            <Font name="Roboto Condensed" size="25.0"/>
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="678.0" text="Specialite" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="712.0">
+         <font>
+            <Font name="Roboto Condensed" size="25.0"/>
+         </font>
+      </Label>
+      <DatePicker fx:id="addDateNaiss" layoutX="323.0" layoutY="310.0" prefHeight="39.0" prefWidth="251.0"
+                  promptText="Date Naissance" style="-fx-background-color: #dcdcdc;" AnchorPane.leftAnchor="303.0"
+                  AnchorPane.topAnchor="310.0">
+         <styleClass>
+            <String fx:value="input"/>
+            <String fx:value="date-picker"/>
+         </styleClass>
+      </DatePicker>
+      <TextField fx:id="addCin" layoutX="319.0" layoutY="396.0" prefHeight="35.5" prefWidth="260.0" promptText="CIN"
+                 style="-fx-background-color: #dcdcdc;" styleClass="input" AnchorPane.leftAnchor="303.0"
+                 AnchorPane.topAnchor="400.0">
+         <font>
+            <Font name="Roboto Light" size="20.0"/>
+         </font>
+      </TextField>
+      <TextField fx:id="addEmail" layoutX="319.0" layoutY="474.0" prefHeight="35.5" prefWidth="260.0" promptText="Email"
+                 style="-fx-background-color: #dcdcdc;" styleClass="input" AnchorPane.leftAnchor="303.0"
+                 AnchorPane.topAnchor="478.0">
+         <font>
+            <Font name="Roboto Light" size="20.0"/>
+         </font>
+      </TextField>
+      <TextField fx:id="addTel" layoutX="303.0" layoutY="552.0" prefHeight="35.5" prefWidth="260.0"
+                 promptText="Telephone" style="-fx-background-color: #dcdcdc;" styleClass="input"
+                 AnchorPane.leftAnchor="303.0" AnchorPane.topAnchor="556.0">
+         <font>
+            <Font name="Roboto Light" size="20.0"/>
+         </font>
+      </TextField>
+      <TextField fx:id="addAdr" layoutX="314.0" layoutY="630.0" prefHeight="39.0" prefWidth="358.0" promptText="Adresse"
+                 style="-fx-background-color: #dcdcdc;" styleClass="input" AnchorPane.leftAnchor="303.0"
+                 AnchorPane.topAnchor="634.0">
+         <font>
+            <Font name="Roboto Light" size="20.0"/>
+         </font>
+      </TextField>
+      <TextField fx:id="addMatiere" layoutX="303.0" layoutY="693.0" prefHeight="35.5" prefWidth="260.0"
+                 promptText="Specialite" style="-fx-background-color: #dcdcdc;" styleClass="input"
+                 AnchorPane.leftAnchor="303.0" AnchorPane.topAnchor="712.0">
+         <font>
+            <Font name="Roboto Light" size="20.0"/>
+         </font>
+      </TextField>
+      <TextField fx:id="addZip" layoutX="705.0" layoutY="634.0" prefHeight="39.0" prefWidth="182.0" promptText="ZIP"
+                 style="-fx-background-color: #dcdcdc;" styleClass="input" AnchorPane.topAnchor="634.0">
+         <font>
+            <Font name="Roboto Light" size="20.0"/>
+         </font>
+      </TextField>
+      <Label layoutX="52.0" layoutY="688.0" text="Gender" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="790.0">
+         <font>
+            <Font name="Roboto Condensed" size="25.0"/>
+         </font>
+      </Label>
+      <ChoiceBox fx:id="addGender" layoutX="303.0" layoutY="793.0" prefHeight="35.5" prefWidth="260.0"
+                 style="-fx-background-color: #dcdcdc;" styleClass="input" AnchorPane.leftAnchor="303.0"
+                 AnchorPane.topAnchor="790.0"/>
+   </children>
+</AnchorPane>

@@ -1,0 +1,305 @@
+Index: src/eduspace/view/gestRHAjout.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/eduspace/view/gestRHAjout.fxml	(revision aaa095a8a2a75ad953faa07d1fd090f79666214e)
++++ src/eduspace/view/gestRHAjout.fxml	(date 1585959087622)
+@@ -1,15 +1,106 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import java.lang.*?>
+-<?import java.util.*?>
+-<?import javafx.scene.*?>
+-<?import javafx.scene.control.*?>
+-<?import javafx.scene.layout.*?>
++<?import java.lang.String?>
++<?import javafx.scene.control.DatePicker?>
++<?import javafx.scene.control.TextField?>
++<?import javafx.scene.layout.AnchorPane?>
++<?import javafx.scene.layout.Pane?>
++<?import javafx.scene.text.Font?>
++<?import javafx.scene.text.Text?>
+ 
+-<AnchorPane xmlns="http://javafx.com/javafx"
+-            xmlns:fx="http://javafx.com/fxml"
+-            fx:controller="eduspace.controller.GestRHController"
+-            prefHeight="400.0" prefWidth="600.0"
+-            stylesheets="@css/gestRH.css">
++<AnchorPane fx:id="body" prefHeight="912.0" prefWidth="924.0" stylesheets="@css/gestRH.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eduspace.controller.GestRHController">
++    <children>
++        <Text fill="#343434" layoutX="52.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajout de compte RH" wrappingWidth="524.13671875" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="85.61328125">
++            <font>
++                <Font name="Roboto Condensed" size="50.0" />
++            </font>
++        </Text>
++      <Pane layoutX="18.0" layoutY="160.0" prefHeight="128.0" prefWidth="888.0" styleClass="inputContainer" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="160.0">
++         <children>
++            <TextField layoutX="563.0" layoutY="47.0" prefHeight="25.0" prefWidth="250.0" promptText="Prenom" styleClass="input">
++               <font>
++                  <Font name="Roboto Light" size="25.0" />
++               </font>
++            </TextField>
++            <TextField layoutX="245.0" layoutY="47.0" prefHeight="35.0" prefWidth="280.0" promptText="Nom" styleClass="input">
++               <font>
++                  <Font name="Roboto Light" size="25.0" />
++               </font>
++            </TextField>
++            <Text layoutX="39.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom &amp; Prenom" textAlignment="CENTER">
++               <font>
++                  <Font name="Roboto Light" size="25.0" />
++               </font>
++            </Text>
++         </children>
++      </Pane>
++      <Pane layoutX="18.0" layoutY="288.0" prefHeight="128.0" prefWidth="888.0" styleClass="inputContainer">
++         <children>
++            <TextField layoutX="563.0" layoutY="47.0" prefHeight="25.0" prefWidth="250.0" promptText="CIN" styleClass="input">
++               <font>
++                  <Font name="Roboto Light" size="25.0" />
++               </font>
++            </TextField>
++            <TextField layoutX="245.0" layoutY="47.0" prefHeight="35.0" prefWidth="280.0" promptText="Email" styleClass="input">
++               <font>
++                  <Font name="Roboto Light" size="25.0" />
++               </font>
++            </TextField>
++            <Text layoutX="56.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email &amp; CIN" textAlignment="CENTER">
++               <font>
++                  <Font name="Roboto Light" size="25.0" />
++               </font>
++            </Text>
++         </children>
++      </Pane>
++      <Pane layoutX="18.0" layoutY="416.0" prefHeight="128.0" prefWidth="888.0" styleClass="inputContainer">
++         <children>
++            <Text layoutX="68.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone" textAlignment="CENTER">
++               <font>
++                  <Font name="Roboto Light" size="25.0" />
++               </font>
++            </Text>
++            <TextField layoutX="368.0" layoutY="49.0" prefHeight="35.0" prefWidth="280.0" promptText="Telephone" styleClass="input">
++               <font>
++                  <Font name="Roboto Light" size="25.0" />
++               </font>
++            </TextField>
++         </children>
++      </Pane>
++      <Pane layoutX="18.0" layoutY="672.0" prefHeight="128.0" prefWidth="888.0" styleClass="inputContainer">
++         <children>
++            <Text layoutX="63.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse" textAlignment="CENTER">
++               <font>
++                  <Font name="Roboto Light" size="25.0" />
++               </font>
++            </Text>
++            <TextField layoutX="245.0" layoutY="39.0" prefHeight="35.0" prefWidth="359.0" promptText="Adresse" styleClass="input">
++               <font>
++                  <Font name="Roboto Light" size="25.0" />
++               </font>
++            </TextField>
++            <TextField layoutX="633.0" layoutY="39.0" prefHeight="35.0" prefWidth="159.0" promptText="ZIP" styleClass="input">
++               <font>
++                  <Font name="Roboto Light" size="25.0" />
++               </font>
++            </TextField>
++         </children>
++      </Pane>
++      <Pane layoutX="18.0" layoutY="544.0" prefHeight="128.0" prefWidth="888.0" styleClass="inputContainer">
++         <children>
++            <Text layoutX="24.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date de Naissance" textAlignment="CENTER">
++               <font>
++                  <Font name="Roboto Light" size="25.0" />
++               </font>
++            </Text>
++            <DatePicker layoutX="378.0" layoutY="45.0" prefHeight="35.0" prefWidth="300.0" promptText="Date de Naissance">
++               <styleClass>
++                  <String fx:value="input" />
++                  <String fx:value="date-picker" />
++               </styleClass>
++            </DatePicker>
++         </children>
++      </Pane>
++    </children>
+ 
+ </AnchorPane>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision aaa095a8a2a75ad953faa07d1fd090f79666214e)
++++ .idea/workspace.xml	(date 1585956290404)
+@@ -3,12 +3,10 @@
+   <component name="ChangeListManager">
+     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="MVC eduspace">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/eduspace/controller/GestRHController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/controller/GestRHController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/eduspace/view/gestRH.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/view/gestRH.fxml" afterDir="false" />
+-    </list>
+-    <list id="849b839f-0f76-4e9b-8deb-08ee18c34608" name="iheb" comment="">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/eduspace/view/css/gestRH.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/view/css/gestRH.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/eduspace/view/gestRHAjout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/view/gestRHAjout.fxml" afterDir="false" />
+     </list>
++    <list id="849b839f-0f76-4e9b-8deb-08ee18c34608" name="iheb" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -95,29 +93,6 @@
+         <option value="C:\Users\iheb\eclipse-workspace\Eduspace\.idea" />
+       </set>
+     </option>
+-  </component>
+-  <component name="LineStatusTrackerManager">
+-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+-      <ranges>
+-        <range start1="5" end1="5" start2="5" end2="6" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" />
+-        <range start1="7" end1="7" start2="8" end2="11" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" />
+-        <range start1="59" end1="59" start2="63" end2="64" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" />
+-        <range start1="60" end1="61" start2="65" end2="65" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" />
+-        <range start1="93" end1="93" start2="97" end2="119" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" />
+-        <range start1="228" end1="228" start2="254" end2="255" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" />
+-        <range start1="381" end1="382" start2="408" end2="416" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" />
+-        <range start1="439" end1="440" start2="473" end2="474" changelist="849b839f-0f76-4e9b-8deb-08ee18c34608" />
+-        <range start1="442" end1="443" start2="476" end2="477" changelist="849b839f-0f76-4e9b-8deb-08ee18c34608" />
+-        <range start1="459" end1="460" start2="493" end2="494" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" />
+-        <range start1="462" end1="464" start2="496" end2="498" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" />
+-        <range start1="466" end1="468" start2="500" end2="502" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" />
+-        <range start1="470" end1="472" start2="504" end2="506" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" />
+-        <range start1="474" end1="475" start2="508" end2="509" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" />
+-        <range start1="503" end1="504" start2="537" end2="538" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" />
+-        <range start1="506" end1="508" start2="540" end2="542" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" />
+-        <range start1="510" end1="511" start2="544" end2="545" changelist="849b839f-0f76-4e9b-8deb-08ee18c34608" />
+-      </ranges>
+-    </file>
+   </component>
+   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+   <component name="ProjectId" id="1YcT4UoqUOyBC65VdRxY9Kzzgbk" />
+@@ -414,7 +389,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1585884704766</updated>
+     </task>
+-    <option name="localTasksCounter" value="23" />
++    <task id="LOCAL-00023" summary="MVC eduspace">
++      <created>1585885534856</created>
++      <option name="number" value="00023" />
++      <option name="presentableId" value="LOCAL-00023" />
++      <option name="project" value="LOCAL" />
++      <updated>1585885534856</updated>
++    </task>
++    <option name="localTasksCounter" value="24" />
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
+@@ -472,10 +454,10 @@
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585799855457" />
+-    <state x="613" y="116" key="CommitChangelistDialog2" timestamp="1585884515617">
++    <state x="613" y="116" key="CommitChangelistDialog2" timestamp="1585885532563">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state x="613" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585884515617" />
++    <state x="613" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585885532563" />
+     <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1585884414457">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+@@ -492,22 +474,22 @@
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="830" y="413" width="260" height="286" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583275962826" />
+-    <state width="1877" height="207" key="GridCell.Tab.0.bottom" timestamp="1585884947131">
++    <state width="1877" height="207" key="GridCell.Tab.0.bottom" timestamp="1585956287055">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585884947131" />
+-    <state width="1877" height="207" key="GridCell.Tab.0.center" timestamp="1585884947131">
++    <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585956287055" />
++    <state width="1877" height="207" key="GridCell.Tab.0.center" timestamp="1585956287054">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585884947131" />
+-    <state width="1877" height="207" key="GridCell.Tab.0.left" timestamp="1585884947131">
++    <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585956287054" />
++    <state width="1877" height="207" key="GridCell.Tab.0.left" timestamp="1585956287054">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585884947131" />
+-    <state width="1877" height="207" key="GridCell.Tab.0.right" timestamp="1585884947131">
++    <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585956287054" />
++    <state width="1877" height="207" key="GridCell.Tab.0.right" timestamp="1585956287054">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585884947131" />
++    <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585956287054" />
+     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1583325994242">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+@@ -540,14 +522,14 @@
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="807" y="435" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585884750164" />
+-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1585884708138">
++    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1585885576738">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585801571441" />
+-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1585872099753">
++    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585885576738" />
++    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1585948686848">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585872099753" />
++    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585948686848" />
+     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585796145720">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+Index: src/eduspace/view/css/gestRH.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/eduspace/view/css/gestRH.css	(revision aaa095a8a2a75ad953faa07d1fd090f79666214e)
++++ src/eduspace/view/css/gestRH.css	(date 1585958602924)
+@@ -1,3 +1,10 @@
++#body{
++-fx-background-color: #E6E6E6;
++-fx-background-radius: 20px 0px 0px 20px;
++ -fx-border-radius: 20px 0px 0px 20px;
++
++}
++/*******Main*******/
+ #Addbtn{
+ -fx-background-color: #2871FA;
+ -fx-background-radius: 10px;
+@@ -10,6 +17,26 @@
+ -fx-background-color: #528DFC;
+ -fx-cursor: hand;
+ }
+-#table-view .filler {
+--fx-background-color: #528DFC;
+-}
+\ No newline at end of file
++
++/*******Ajout RH*******/
++.input{
++-fx-background-color: #E6E6E6;
++-fx-background-radius: 10px;
++-fx-border-width: 0 0 0.5 0;
++-fx-border-color: #343434;
++
++
++}
++.input:focused {
++-fx-border-width: 0 0 1.5 0;
++}
++.inputContainer{
++-fx-background-color: #E6E6E6;
++-fx-border-width: 0 0 1 0;
++-fx-border-color: #343434;
++}
++.date-picker > .text-field {
++    -fx-background-color:#E6E6E6;
++    -fx-font-size: 25px;
++
++}

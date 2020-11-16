@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Eduspace-BETA" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Front Gest Formateur &#10;Back modifier son compte">
+      <change afterPath="$PROJECT_DIR$/src/eduspace/vendor/Generate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eduspace/view/img/infoBg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eduspace/view/infoBox.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Eduspace/META-INF/Eduspace.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Eduspace/eduspace/controller/GestBrancheController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Eduspace/eduspace/controller/GestBrancheController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Eduspace/eduspace/controller/GestDomaineController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Eduspace/eduspace/controller/GestDomaineController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Eduspace/eduspace/view/AffDomaine.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Eduspace/eduspace/view/AffDomaine.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Eduspace/eduspace/view/css/branche.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Eduspace/eduspace/view/css/branche.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Eduspace/eduspace/view/dashboaredRH.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Eduspace/eduspace/view/dashboaredRH.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Eduspace/eduspace/view/dashboaredSuper.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Eduspace/eduspace/view/dashboaredSuper.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Eduspace/eduspace/view/gestDomaine.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Eduspace/eduspace/view/gestDomaine.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Eduspace/eduspace/view/gestRHAjout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Eduspace/eduspace/view/gestRHAjout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Eduspace/eduspace/view/gestSalleAjout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Eduspace/eduspace/view/gestSalleAjout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eduspace/controller/GestBrancheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/controller/GestBrancheController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eduspace/controller/GestDomaineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/controller/GestDomaineController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eduspace/controller/GestFormateurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/controller/GestFormateurController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eduspace/controller/GestRHController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/controller/GestRHController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eduspace/model/Formateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/model/Formateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eduspace/vendor/popup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/vendor/popup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eduspace/view/AddFormateur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/view/AddFormateur.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eduspace/view/AffDomaine.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/view/AffDomaine.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eduspace/view/css/branche.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/view/css/branche.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eduspace/view/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/view/css/popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eduspace/view/gestDomaine.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/view/gestDomaine.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eduspace/view/gestFormateur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/view/gestFormateur.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eduspace/view/gestRH.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/view/gestRH.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eduspace/view/gestRHAjout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/eduspace/view/gestRHAjout.fxml" afterDir="false" />
+    </list>
+    <list id="849b839f-0f76-4e9b-8deb-08ee18c34608" name="iheb" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="iheb15M &lt;iheb15mejri@gmail.com&gt;" />
+        <option value="anouarhadded" />
+      </list>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="eduspace" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="8a4872cf-7af1-4add-8660-138698733d79" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectId" id="1YcT4UoqUOyBC65VdRxY9Kzzgbk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/eduspace/view" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.20804597" />
+    <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="eduspace.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\iheb.DESKTOP-OHKQBFH.000\eclipse-workspace\Eduspace\lib" />
+      <recent name="C:\Users\iheb.DESKTOP-OHKQBFH.000\eclipse-workspace\Eduspace\database" />
+      <recent name="C:\Users\iheb.DESKTOP-OHKQBFH.000\eclipse-workspace\Eduspace\src\eduspace\view\css" />
+      <recent name="C:\Users\iheb.DESKTOP-OHKQBFH.000\eclipse-workspace\Eduspace\src\eduspace\view" />
+      <recent name="C:\Users\iheb\eclipse-workspace\Eduspace\src\eduspace\view" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\iheb.DESKTOP-OHKQBFH.000\eclipse-workspace\Eduspace\src\eduspace\view" />
+      <recent name="C:\Users\iheb.DESKTOP-OHKQBFH.000\eclipse-workspace\Eduspace\src\eduspace\view\css" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="eduspace.Main" />
+      <module name="Eduspace" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\iheb.DESKTOP-OHKQBFH.000\Documents\javafx-sdk-13.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.controller.Controller" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+      <changelist id="849b839f-0f76-4e9b-8deb-08ee18c34608" name="iheb" comment="" />
+      <created>1359379246138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1359379246138</updated>
+      <workItem from="1359379250712" duration="1302000" />
+    </task>
+    <task id="LOCAL-00011" summary="MVC eduspace">
+      <created>1585357000773</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1585357000773</updated>
+    </task>
+    <task id="LOCAL-00012" summary="MVC eduspace">
+      <created>1585767403925</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585767403925</updated>
+    </task>
+    <task id="LOCAL-00013" summary="MVC eduspace">
+      <created>1585767706438</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1585767706438</updated>
+    </task>
+    <task id="LOCAL-00014" summary="MVC eduspace">
+      <created>1585790121334</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1585790121334</updated>
+    </task>
+    <task id="LOCAL-00015" summary="MVC eduspace">
+      <created>1585795722685</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1585795722685</updated>
+    </task>
+    <task id="LOCAL-00016" summary="MVC eduspace">
+      <created>1585796090108</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1585796090109</updated>
+    </task>
+    <task id="LOCAL-00017" summary="MVC eduspace">
+      <created>1585801531051</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1585801531051</updated>
+    </task>
+    <task id="LOCAL-00018" summary="MVC eduspace">
+      <created>1585801569018</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1585801569018</updated>
+    </task>
+    <task id="LOCAL-00019" summary="MVC eduspace">
+      <created>1585876257296</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1585876257297</updated>
+    </task>
+    <task id="LOCAL-00020" summary="MVC eduspace">
+      <created>1585884212017</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1585884212017</updated>
+    </task>
+    <task id="LOCAL-00021" summary="MVC eduspace">
+      <created>1585884516970</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1585884516971</updated>
+    </task>
+    <task id="LOCAL-00022" summary="MVC eduspace">
+      <created>1585884704766</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1585884704766</updated>
+    </task>
+    <task id="LOCAL-00023" summary="MVC eduspace">
+      <created>1585885534856</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1585885534856</updated>
+    </task>
+    <task id="LOCAL-00024" summary="MVC eduspace">
+      <created>1585959321779</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1585959321779</updated>
+    </task>
+    <task id="LOCAL-00025" summary="MVC eduspace">
+      <created>1585959330588</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1585959330588</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Front Gest RH">
+      <created>1585971369395</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1585971369395</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Front Gest RH">
+      <created>1585972186217</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1585972186217</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Front Gest RH">
+      <created>1585973087964</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1585973087964</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Front Gest RH">
+      <created>1585973490673</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1585973490673</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Front Gest RH">
+      <created>1586137907153</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1586137907153</updated>
+    </task>
+    <task id="LOCAL-00031" summary="table Salle.sql">
+      <created>1586468287925</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1586468287925</updated>
+    </task>
+    <task id="LOCAL-00032" summary="title fxml">
+      <created>1586495872762</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1586495872762</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Animate FX&#10;Modifier Login">
+      <created>1586517382929</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1586517382929</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Animate FX&#10;              Modifier Login">
+      <created>1586518270353</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1586518270353</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Gestion de domaines">
+      <created>1586649995911</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1586649995911</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Modification BD">
+      <created>1586661860577</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1586661860577</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Modification BD">
+      <created>1586661982805</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1586661982805</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Modification BD">
+      <created>1586662276531</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1586662276531</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Modification BD">
+      <created>1586662346783</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1586662346783</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Database tables">
+      <created>1586665022510</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1586665022510</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Gest Domaine backend">
+      <created>1586828042878</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1586828042878</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Gest Domaine backend">
+      <created>1586904619477</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1586904619477</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Gest Domaine backend">
+      <created>1587961059443</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1587961059443</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Gest Domaine backend">
+      <created>1588308405732</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1588308405732</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Gest Domaine backend">
+      <created>1588308468367</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1588308468367</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Gest Domaine backend">
+      <created>1588393107803</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1588393107803</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Gest RH dashboared">
+      <created>1588635798788</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1588635798788</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Gest Salle Front&#10;(Anouar hadded)">
+      <created>1588640630709</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1588640630709</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Gest Salle Front&#10;(Anouar hadded)">
+      <created>1588644214149</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1588644214149</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Gest Branche">
+      <created>1589235830076</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1589235830079</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Gest Branche">
+      <created>1589236294590</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1589236294590</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Gest Branche">
+      <created>1589236324123</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1589236324123</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Gest Salle">
+      <created>1589241929186</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1589241929186</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Gest Salle">
+      <created>1589331283168</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1589331283169</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Gest Salle">
+      <created>1589420790388</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1589420790389</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Modification Database">
+      <created>1589847689653</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1589847689653</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Model employe et poste&#10;front and back Aff profile&#10;Front Edit Profile">
+      <created>1590405535826</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1590405535827</updated>
+    </task>
+    <task id="LOCAL-00058" summary="RH">
+      <created>1592346409042</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1592346409042</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Front Gest Formateur &#10;Back modifier son compte">
+      <created>1592412248579</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1592412248580</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1302000" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <MESSAGE value="MVC eduspace" />
+    <MESSAGE value="Front Gest RH" />
+    <MESSAGE value="table Salle.sql" />
+    <MESSAGE value="title fxml" />
+    <MESSAGE value="Animate FX&#10;Modifier Login" />
+    <MESSAGE value="Animate FX&#10;              Modifier Login" />
+    <MESSAGE value="Gestion de domaines" />
+    <MESSAGE value="Modification BD" />
+    <MESSAGE value="Database tables" />
+    <MESSAGE value="Gest Domaine backend" />
+    <MESSAGE value="Gest RH dashboared" />
+    <MESSAGE value="Gest Salle Front&#10;(Anouar hadded)" />
+    <MESSAGE value="Gest Branche" />
+    <MESSAGE value="Gest Salle" />
+    <MESSAGE value="Modification Database" />
+    <MESSAGE value="Model employe et poste&#10;front and back Aff profile&#10;Front Edit Profile" />
+    <MESSAGE value="RH" />
+    <MESSAGE value="Front Gest Formateur &#10;Back modifier son compte" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front Gest Formateur &#10;Back modifier son compte" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="161" key="#Plugins" timestamp="1590193870910">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="161" key="#Plugins/0.0.1920.1040@0.0.1920.1040" timestamp="1590193870910" />
+    <state x="552" y="179" key="#Updates" timestamp="1586344005274">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#Updates/0.0.1920.1040@0.0.1920.1040" timestamp="1586344005274" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592345863439">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592345863439" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1592616202216">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592616202216" />
+    <state x="690" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590018668397">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590018668397" />
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588293593686">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588293593686" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590405811646">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590405811646" />
+    <state x="707" y="252" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586656362030">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="707" y="252" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1586656362030" />
+    <state x="676" y="135" key="CommitChangelistDialog2" timestamp="1592412244304">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="676" y="135" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592412244304" />
+    <state x="490" y="175" key="DBNavigator.ProjectSettingsDialog" timestamp="1590193890475">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="175" key="DBNavigator.ProjectSettingsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590193890475" />
+    <state x="714" y="235" key="DetectedRootsChooserDialog" timestamp="1585971583840">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="714" y="235" key="DetectedRootsChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585971583840" />
+    <state x="230" y="88" width="1536" height="860" maximized="true" key="DiffContextDialog" timestamp="1589846514278">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="230" y="88" width="1536" height="860" maximized="true" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589846514278" />
+    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1587870624228">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587870624228" />
+    <state x="782" y="419" key="Github.CreateGistDialog" timestamp="1590396042744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="782" y="419" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590396042744" />
+    <state x="820" y="443" key="Github.Dialog.Accounts.Choose" timestamp="1585796110824">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="820" y="443" key="Github.Dialog.Accounts.Choose/0.0.1920.1040@0.0.1920.1040" timestamp="1585796110824" />
+    <state width="1877" height="143" key="GridCell.Tab.0.bottom" timestamp="1592622003463">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="143" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592622003463" />
+    <state width="1877" height="143" key="GridCell.Tab.0.center" timestamp="1592622003462">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="143" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592622003462" />
+    <state width="1877" height="143" key="GridCell.Tab.0.left" timestamp="1592622003462">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="143" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592622003462" />
+    <state width="1877" height="143" key="GridCell.Tab.0.right" timestamp="1592622003462">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="143" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592622003462" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1588811456158">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588811456158" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1588811456157">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588811456157" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1588811456157">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588811456157" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1588811456158">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588811456157" />
+    <state x="739" y="242" key="RollbackChangesDialog" timestamp="1589242607866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="242" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589242607866" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1587871366319">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587871366319" />
+    <state x="807" y="435" key="VCS.ChangelistChooser" timestamp="1586650178073">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="807" y="435" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586650178073" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592412259164">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592412259164" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586138198879">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586138198879" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586740468202">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586740468202" />
+    <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586565218838">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1586565218838" />
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592345517147">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592345517147" />
+    <state x="746" y="311" key="git4idea.merge.GitMergeDialog" timestamp="1586662230487">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="746" y="311" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586662230487" />
+    <state x="649" y="308" key="git4idea.merge.GitPullDialog" timestamp="1589331547386">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="649" y="308" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589331547386" />
+    <state x="689" y="365" key="git4idea.ui.GitTagDialog" timestamp="1586137890470">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="365" key="git4idea.ui.GitTagDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586137890470" />
+  </component>
+</project>

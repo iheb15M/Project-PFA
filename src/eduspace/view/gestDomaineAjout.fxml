@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="body" prefHeight="912" prefWidth="924" stylesheets="@css/gestDomaine.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="eduspace.controller.GestDomaineController">
+    <children>
+        <AnchorPane layoutY="57.0" prefHeight="115.0" prefWidth="200.0" style="-fx-background-color: #2871FA;"
+                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="57.0">
+            <children>
+                <Text fill="#e6e6e6" layoutX="56.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="Ajout de Domaines" wrappingWidth="524.13671875" AnchorPane.bottomAnchor="28.79296875"
+                      AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="347.86328125"
+                      AnchorPane.topAnchor="27.61328125">
+                    <font>
+                        <Font name="Roboto Condensed" size="50.0"/>
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="domainePane" layoutX="16.0" layoutY="206.0" prefHeight="252.0" prefWidth="898.0"
+                    AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="206.0">
+            <children>
+                <Text fill="#343434" layoutX="17.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Domaine"
+                      AnchorPane.leftAnchor="17.5" AnchorPane.topAnchor="0.0">
+                    <font>
+                        <Font name="Roboto Light" size="30.0"/>
+                    </font>
+                </Text>
+                <Text fill="#343434" layoutX="17.5" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="Nom de domaine" AnchorPane.bottomAnchor="164.0" AnchorPane.leftAnchor="17.5"
+                      AnchorPane.rightAnchor="691.96240234375" AnchorPane.topAnchor="98.0">
+                    <font>
+                        <Font name="Roboto Light" size="25.0"/>
+                    </font>
+                </Text>
+                <TextField fx:id="nomDomaine" layoutX="335.0" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                           minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#NomDomaine" prefHeight="35.5"
+                           prefWidth="329.0" promptText="Nom de domaine" styleClass="input"
+                           AnchorPane.bottomAnchor="160.5" AnchorPane.leftAnchor="334.0" AnchorPane.rightAnchor="235.0"
+                           AnchorPane.topAnchor="95.0">
+                    <font>
+                        <Font name="Roboto Light" size="25.0"/>
+                    </font>
+                </TextField>
+                <Text fx:id="erreurNomDomaine" layoutX="334.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0"/>
+            </children>
+        </AnchorPane>
+        <Text fill="#343434" layoutX="77.0" layoutY="614.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departement"
+              AnchorPane.bottomAnchor="323.0" AnchorPane.leftAnchor="28.5" AnchorPane.rightAnchor="723.5"
+              AnchorPane.topAnchor="552.0">
+            <font>
+                <Font name="Roboto Light" size="30.0"/>
+            </font>
+        </Text>
+        <Text fill="#343434" layoutX="92.0" layoutY="637.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Nom de departement" AnchorPane.bottomAnchor="232.0" AnchorPane.leftAnchor="28.5"
+              AnchorPane.rightAnchor="662.5" AnchorPane.topAnchor="650.0">
+            <font>
+                <Font name="Roboto Light" size="25.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="nomDep" layoutX="409.0" layoutY="615.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                   minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#NomDep" prefHeight="35.5"
+                   prefWidth="329.0" promptText="Nom de departement" styleClass="input" AnchorPane.bottomAnchor="226.5"
+                   AnchorPane.leftAnchor="345.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="650.0">
+            <font>
+                <Font name="Roboto Light" size="25.0"/>
+            </font>
+        </TextField>
+        <Text fx:id="erreurNomDep" layoutX="345.0" layoutY="705.0" strokeType="OUTSIDE" strokeWidth="0.0"/>
+        <Text fill="#343434" layoutX="38.0" layoutY="774.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Chef de departement" AnchorPane.bottomAnchor="133.0" AnchorPane.leftAnchor="28.5"
+              AnchorPane.rightAnchor="662.5" AnchorPane.topAnchor="749.0">
+            <font>
+                <Font name="Roboto Light" size="25.0"/>
+            </font>
+        </Text>
+        <ChoiceBox fx:id="chefDep" layoutX="384.0" layoutY="764.0" onMouseClicked="#setItems" prefWidth="150.0"
+                   styleClass="input" AnchorPane.bottomAnchor="130.5" AnchorPane.leftAnchor="345.0"
+                   AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="746.0"/>
+        <ImageView fitHeight="30.0" fitWidth="106.0" layoutX="804.0" layoutY="868.0" pickOnBounds="true"
+                   preserveRatio="true" AnchorPane.bottomAnchor="14.55555534362793" AnchorPane.rightAnchor="14.0">
+            <image>
+                <Image url="@img/dash/eduspace.png"/>
+            </image>
+        </ImageView>
+        <Button fx:id="Addbtn" layoutX="673.0" layoutY="813.0" mnemonicParsing="false" onMouseClicked="#submit"
+                prefHeight="42.0" prefWidth="193.0" text="Ajouter un domaine" textFill="WHITE"
+                AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="673.0" AnchorPane.rightAnchor="67.0"
+                AnchorPane.topAnchor="813.0">
+            <font>
+                <Font name="Roboto Condensed" size="14.0"/>
+            </font>
+        </Button>
+    </children>
+
+</AnchorPane>

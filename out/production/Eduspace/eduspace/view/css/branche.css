@@ -1,0 +1,30 @@
+.input{
+-fx-background-color: #2871FA;
+-fx-background-radius: 10px;
+-fx-border-width: 0 0 0.5 0;
+-fx-border-color: #343434;
+}
+.input:focused {
+-fx-border-width: 0 0 1 0;
+-fx-border-color: #2871FA;
+}
+
+.btn{
+-fx-background-color: #E6E6E6;
+-fx-background-radius: 10px;
+ -fx-border-radius: 10px;
+ -fx-padding: 12px;
+}
+.btn:hover{
+-fx-background-color: #528DFC;
+-fx-cursor: hand;
+}
+
+.btnClose{
+-fx-background-color: #2871FA;
+ -fx-padding: 12px;
+}
+.btnClose:hover{
+-fx-background-color: #528DFC;
+-fx-cursor: hand;
+}

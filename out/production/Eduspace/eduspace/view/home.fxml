@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="body" fx:id="body" stylesheets="@css/login.css" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="eduspace.controller.home">
+    <children>
+        <ImageView fx:id="splash" fitHeight="912.0" fitWidth="1368.0" pickOnBounds="true" preserveRatio="true"
+                   AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                   AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@img/cover.jpg"/>
+            </image>
+        </ImageView>
+        <AnchorPane fx:id="content">
+            <children>
+                <AnchorPane prefHeight="912.0" prefWidth="1368.0" AnchorPane.bottomAnchor="0.0"
+                            AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <AnchorPane layoutY="6.0" prefHeight="912.0" prefWidth="1368.0" AnchorPane.bottomAnchor="-6.0"
+                                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="6.0">
+                            <children>
+                                <AnchorPane fx:id="loginForm" cache="true" layoutX="112.0" layoutY="166.0"
+                                            maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                            prefHeight="580.0" prefWidth="460.0" stylesheets="@css/login.css"
+                                            AnchorPane.bottomAnchor="161.0" AnchorPane.leftAnchor="783.0"
+                                            AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="166.0">
+                                    <children>
+                                        <Text fill="#2871fa" layoutX="110.0" layoutY="99.0" strokeType="OUTSIDE"
+                                              strokeWidth="0.0" text="Connectez-Vous" textAlignment="CENTER"
+                                              AnchorPane.bottomAnchor="473.1875" AnchorPane.leftAnchor="109.71875"
+                                              AnchorPane.rightAnchor="110.28125" AnchorPane.topAnchor="69.3125">
+                                            <font>
+                                                <Font name="Roboto Regular" size="32.0"/>
+                                            </font>
+                                        </Text>
+                                        <Text fill="#707070" layoutX="19.0" layoutY="220.0" strokeType="OUTSIDE"
+                                              strokeWidth="0.0" text="Pseudo" AnchorPane.bottomAnchor="359.60546875"
+                                              AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="386.5439453125"
+                                              AnchorPane.topAnchor="203.30078125">
+                                            <font>
+                                                <Font name="Roboto Thin" size="18.0"/>
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="pseudo" layoutX="19.0" layoutY="232.0" onKeyReleased="#Login"
+                                                   prefHeight="25.0" prefWidth="417.0" styleClass="input"
+                                                   AnchorPane.bottomAnchor="321.0" AnchorPane.leftAnchor="19.0"
+                                                   AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="232.0"/>
+                                        <Text fill="#707070" layoutX="22.0" layoutY="342.0" strokeType="OUTSIDE"
+                                              strokeWidth="0.0" text="Mot de passe"
+                                              AnchorPane.bottomAnchor="236.60546875" AnchorPane.leftAnchor="22.0"
+                                              AnchorPane.rightAnchor="336.1552734375"
+                                              AnchorPane.topAnchor="325.30078125">
+                                            <font>
+                                                <Font name="Roboto Thin" size="18.0"/>
+                                            </font>
+                                        </Text>
+                                        <PasswordField fx:id="password" layoutX="22.0" layoutY="353.0"
+                                                       onKeyReleased="#Login" prefHeight="25.0" prefWidth="417.0"
+                                                       styleClass="input" AnchorPane.bottomAnchor="205.0"
+                                                       AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="21.0"
+                                                       AnchorPane.topAnchor="353.0"/>
+                                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="404.0" layoutY="230.0"
+                                                   pickOnBounds="true" preserveRatio="true"
+                                                   AnchorPane.bottomAnchor="331.0" AnchorPane.leftAnchor="404.0"
+                                                   AnchorPane.rightAnchor="37.0">
+                                            <image>
+                                                <Image url="@img/001-user.png"/>
+                                            </image>
+                                        </ImageView>
+                                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="407.0" layoutY="351.0"
+                                                   pickOnBounds="true" preserveRatio="true"
+                                                   AnchorPane.bottomAnchor="208.0" AnchorPane.leftAnchor="407.0"
+                                                   AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="351.0">
+                                            <image>
+                                                <Image url="@img/002-lock.png"/>
+                                            </image>
+                                        </ImageView>
+                                        <Text fx:id="mpo" fill="#2871fa" layoutX="146.0" layoutY="549.0"
+                                              strokeType="OUTSIDE" strokeWidth="0.0"
+                                              text="Mot de Passe Oublie? clickez ici"
+                                              AnchorPane.bottomAnchor="33.0703125" AnchorPane.leftAnchor="145.0"
+                                              AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="536.9296875">
+                                            <font>
+                                                <Font name="Roboto Light" size="12.0"/>
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                    AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="EDUSPACE"
+                                      wrappingWidth="459.9999999999998" AnchorPane.bottomAnchor="493.46875"
+                                      AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="802.0000000000002"
+                                      AnchorPane.topAnchor="324.78125">
+                                    <font>
+                                        <Font name="Roboto Condensed" size="80.0"/>
+                                    </font>
+                                </Text>
+                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+                                      text="Application de gestion de centre de formation"
+                                      AnchorPane.bottomAnchor="449.896484375" AnchorPane.leftAnchor="105.98486328125"
+                                      AnchorPane.rightAnchor="765.01513671875" AnchorPane.topAnchor="432.806640625">
+                                    <font>
+                                        <Font name="Roboto Light" size="25.0"/>
+                                    </font>
+                                </Text>
+                            </children>
+                        </AnchorPane>
+                        <ImageView fitHeight="65.0" fitWidth="229.0" layoutX="75.0" layoutY="43.0" pickOnBounds="true"
+                                   preserveRatio="true" AnchorPane.bottomAnchor="814.6278076171875"
+                                   AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="1064.0"
+                                   AnchorPane.topAnchor="43.0">
+                            <image>
+                                <Image url="@img/logo.png"/>
+                            </image>
+                        </ImageView>
+                        <!-- Foooter -->
+                        <AnchorPane fx:id="footer" style="-fx-border-top:1px;" AnchorPane.bottomAnchor="3.0"
+                                    AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0"
+                                    AnchorPane.topAnchor="836.0">
+                            <children>
+                                <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                                      text="Creative Labs" AnchorPane.leftAnchor="14.0">
+                                    <font>
+                                        <Font name="Roboto Light" size="18.0"/>
+                                    </font>
+                                </Text>
+                                <Text fill="WHITE" layoutX="1145.0" layoutY="27.0" strokeType="OUTSIDE"
+                                      strokeWidth="0.0" text="Copyright © 2020" AnchorPane.rightAnchor="14.0">
+                                    <font>
+                                        <Font name="Roboto Light" size="18.0"/>
+                                    </font>
+                                </Text>
+                            </children>
+                        </AnchorPane>
+                    </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

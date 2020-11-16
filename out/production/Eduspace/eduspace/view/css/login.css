@@ -1,0 +1,49 @@
+#body{
+-fx-background-image: url("../img/bg_login.jpg");
+-fx-background-position: left top, center;
+-fx-background-repeat: no-repeat;
+-fx-background-size: cover, auto;
+
+}
+
+#loginForm{
+-fx-background-color: #F3F3F3;
+-fx-background-radius: 19px;
+ -fx-border-radius: 19px;
+-fx-width:460;
+-fx-height:580;
+
+}
+
+#footer{
+-fx-border-width: 2 0 0 0;
+-fx-border-color: white;
+
+}
+
+.input{
+-fx-background-color: #F3F3F3;
+-fx-border-width: 0 0 2 0;
+-fx-border-color: #2871FA;
+}
+
+#btnlogin{
+-fx-background-color: #2871FA;
+-fx-background-radius: 19px;
+ -fx-border-radius: 19px;
+ -fx-padding: 15px;
+ -fx-width: 150px;
+ -fx-height: 20px;
+
+}
+#btnlogin:hover{
+-fx-background-color: #528DFC;
+-fx-cursor: hand;
+}
+
+.invalid{
+-fx-border-color: #FA283D;
+}
+.valid{
+-fx-border-color: #00E1BA;
+}

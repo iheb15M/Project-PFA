@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="body" prefHeight="912" prefWidth="924" stylesheets="@css/gestFormateur.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="eduspace.controller.GestFormateurController">
+    <children>
+        <AnchorPane layoutY="57.0" prefHeight="115.0" prefWidth="200.0" style="-fx-background-color: #2871FA;"
+                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="57.0">
+            <children>
+                <Text fill="#e6e6e6" layoutX="56.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="Gestion de Formateurs" wrappingWidth="524.13671875" AnchorPane.bottomAnchor="28.79296875"
+                      AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="347.86328125"
+                      AnchorPane.topAnchor="27.61328125">
+                    <font>
+                        <Font name="Roboto Condensed" size="50.0"/>
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <TableView fx:id="table" layoutX="47.0" layoutY="224.0" prefHeight="537.0" prefWidth="847.0"
+                   AnchorPane.bottomAnchor="151.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="39.0"
+                   AnchorPane.topAnchor="224.0">
+            <columns>
+                <TableColumn fx:id="cin" editable="false" maxWidth="200.0" minWidth="200.0" prefWidth="200.0"
+                             sortable="false" text="CIN"/>
+                <TableColumn fx:id="Nom" editable="false" prefWidth="200.0" sortable="false"
+                             text="Nom"/>
+                <TableColumn fx:id="Prenom" editable="false" prefWidth="247.0" sortable="false" text="Prenom"/>
+                <TableColumn fx:id="specialite" editable="false" prefWidth="200.0" sortable="false" text="specialite"/>
+
+            </columns>
+        </TableView>
+        <ImageView fitHeight="30.0" fitWidth="106.0" layoutX="804.0" layoutY="868.0" pickOnBounds="true"
+                   preserveRatio="true" AnchorPane.bottomAnchor="14.55555534362793" AnchorPane.rightAnchor="14.0">
+            <image>
+                <Image url="@img/dash/eduspace.png"/>
+            </image>
+        </ImageView>
+        <Button id="Addbtn" layoutX="664.0" layoutY="794.0" mnemonicParsing="false" onAction="#goToAdd"
+                prefHeight="42.0" prefWidth="193.0" text="Ajouter un formateur" textFill="WHITE"
+                AnchorPane.bottomAnchor="76.0" AnchorPane.rightAnchor="67.0" AnchorPane.topAnchor="794.0">
+            <font>
+                <Font name="Roboto Condensed" size="14.0"/>
+            </font>
+
+        </Button>
+    </children>
+</AnchorPane>

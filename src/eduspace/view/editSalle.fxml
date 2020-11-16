@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="eduspace.controller.GestSalleController">
+   <children>
+      <AnchorPane fx:id="editBody" prefHeight="500.0" prefWidth="800.0"
+                  style="-fx-background-color: #2871FA; -fx-border-color: #343434;">
+         <children>
+            <TextField editable="false" layoutX="266.0" layoutY="63.0" prefHeight="42.0" prefWidth="303.0"
+                       promptText="Surnom" style="-fx-background-color: #2871FA;" AnchorPane.bottomAnchor="430.0"
+                       AnchorPane.leftAnchor="265.0" AnchorPane.rightAnchor="265.0" AnchorPane.topAnchor="54.0">
+               <font>
+                  <Font name="Roboto Light" size="20.0"/>
+               </font>
+            </TextField>
+            <TextField layoutX="265.0" layoutY="208.0" prefHeight="42.0" prefWidth="297.0" promptText="Capacité"
+                       style="-fx-background-color: #2871FA;" AnchorPane.leftAnchor="264.0"
+                       AnchorPane.rightAnchor="264.0">
+               <font>
+                  <Font name="Roboto Light" size="20.0"/>
+               </font></TextField>
+            <TextField layoutX="265.0" layoutY="283.0" prefHeight="42.0" prefWidth="297.0" promptText="Type" style="-fx-background-color: #2871FA;" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="264.0">
+               <font>
+                  <Font name="Roboto Light" size="20.0" />
+               </font></TextField>
+            <ChoiceBox layoutX="256.0" layoutY="133.0" prefHeight="42.0" prefWidth="297.0" style="-fx-background-color: #2871FA;" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="264.0" AnchorPane.topAnchor="132.0" />
+            <Line endX="100.0" layoutX="176.0" layoutY="103.0" smooth="false" startX="402.0" stroke="#373737" AnchorPane.bottomAnchor="430.5" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="264.0" AnchorPane.topAnchor="102.5" />
+            <Line endX="100.0" layoutX="174.0" layoutY="175.0" startX="394.0" stroke="#373737" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="264.0" />
+            <Line endX="100.0" layoutX="165.0" layoutY="250.0" startX="394.0" stroke="#373737" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="264.0" />
+            <Line endX="100.0" layoutX="165.0" layoutY="325.0" startX="394.0" stroke="#373737" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="264.0" />
+            <Button fx:id="submitEdit" layoutX="317.0" layoutY="370.0" mnemonicParsing="false" onAction="#submitEdit" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: #e6e6e6; -fx-border-radius: 10;" text="Modifier" textAlignment="CENTER" textFill="#2871fa" AnchorPane.leftAnchor="315.0" AnchorPane.rightAnchor="315.0">
+               <font>
+                  <Font name="Roboto Light" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="submitDelete" layoutX="317.0" layoutY="443.0" mnemonicParsing="false" onAction="#submitDelete" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: #e6e6e6; -fx-border-radius: 10;" text="Supprimer" textAlignment="CENTER" textFill="#2871fa" AnchorPane.leftAnchor="315.0" AnchorPane.rightAnchor="315.0">
+               <font>
+                  <Font name="Roboto Light" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="744.0" layoutY="79.0" mnemonicParsing="false" onAction="#close" prefHeight="49.0" prefWidth="42.0" style="-fx-background-color: #2871FA; -fx-border-color: #e6e6e6; -fx-border-radius: 50;" text="X" textFill="WHITE" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Eduspace-BETA">
+    <output-path>$PROJECT_DIR$/out/artifacts/Eduspace_BETA</output-path>
+    <root id="root" />
+  </artifact>
+</component>

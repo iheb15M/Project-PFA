@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.collections.FXCollections?>
+<AnchorPane fx:id="body" minHeight="-Infinity" minWidth="-Infinity" prefHeight="912.0" prefWidth="924.0"
+            style="-fx-background-color: #E6E6E6;" stylesheets="@css/gestRH.css" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="eduspace.controller.GestRHController">
+   <AnchorPane prefHeight="115.0" prefWidth="200.0" style="-fx-background-color: #2871FA;" AnchorPane.leftAnchor="0.0"
+               AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="57.0">
+      <children>
+         <Text fill="#e6e6e6" layoutX="56.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="Ajout d'employe RH" wrappingWidth="524.13671875" AnchorPane.bottomAnchor="28.79296875"
+               AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="347.86328125" AnchorPane.topAnchor="27.61328125">
+            <font>
+               <Font name="Roboto Condensed" size="50.0"/>
+            </font>
+         </Text>
+      </children>
+   </AnchorPane>
+   <ScrollPane fx:id="scrollPane" layoutY="179.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="741.0"
+               prefWidth="924.0">
+      <content>
+         <AnchorPane style="-fx-background-color: #E6E6E6;" maxHeight="-Infinity" maxWidth="-Infinity"
+                     minHeight="-Infinity" minWidth="-Infinity" prefHeight="1091.0" prefWidth="908.0">
+            <children>
+
+               <AnchorPane layoutX="18.0" layoutY="160.0" prefHeight="128.0" prefWidth="888.0"
+                           styleClass="inputContainer" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0"
+                           AnchorPane.topAnchor="50.0">
+                  <children>
+                     <TextField fx:id="prenom" layoutX="563.0" layoutY="47.0" prefHeight="25.0" prefWidth="250.0"
+                                promptText="Prenom" styleClass="input">
+                        <font>
+                           <Font name="Roboto Light" size="25.0"/>
+                        </font>
+                     </TextField>
+                     <TextField fx:id="nom" layoutX="245.0" layoutY="47.0" prefHeight="35.0" prefWidth="280.0"
+                                promptText="Nom" styleClass="input">
+                        <font>
+                           <Font name="Roboto Light" size="25.0"/>
+                        </font>
+                     </TextField>
+                  <Text layoutX="39.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom &amp; Prenom" textAlignment="CENTER">
+                     <font>
+                        <Font name="Roboto Light" size="25.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+               <AnchorPane layoutX="18.0" layoutY="288.0" prefHeight="128.0" prefWidth="888.0"
+                           styleClass="inputContainer" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0"
+                           AnchorPane.topAnchor="178.0">
+                  <children>
+                     <TextField fx:id="cin" layoutX="563.0" layoutY="47.0" prefHeight="25.0" prefWidth="250.0"
+                                promptText="CIN" styleClass="input">
+                        <font>
+                           <Font name="Roboto Light" size="25.0"/>
+                        </font>
+                     </TextField>
+                     <TextField fx:id="email" layoutX="245.0" layoutY="47.0" prefHeight="35.0" prefWidth="280.0"
+                                promptText="Email" styleClass="input">
+                        <font>
+                           <Font name="Roboto Light" size="25.0"/>
+                        </font>
+                     </TextField>
+                  <Text layoutX="56.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email &amp; CIN" textAlignment="CENTER">
+                     <font>
+                        <Font name="Roboto Light" size="25.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+               <AnchorPane layoutX="26.0" layoutY="306.0" prefHeight="128.0" prefWidth="888.0"
+                           styleClass="inputContainer" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="10.0"
+                           AnchorPane.topAnchor="306.0">
+                  <children>
+                     <Text layoutX="68.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone"
+                           textAlignment="CENTER">
+                        <font>
+                           <Font name="Roboto Light" size="25.0"/>
+                        </font>
+                     </Text>
+                     <TextField fx:id="tel" layoutX="368.0" layoutY="49.0" prefHeight="35.0" prefWidth="280.0"
+                                promptText="Telephone" styleClass="input" AnchorPane.bottomAnchor="31.0"
+                                AnchorPane.leftAnchor="368.0" AnchorPane.rightAnchor="224.0"
+                                AnchorPane.topAnchor="49.0">
+                        <font>
+                           <Font name="Roboto Light" size="25.0"/>
+                        </font>
+                     </TextField>
+               </children>
+            </AnchorPane>
+               <AnchorPane layoutX="18.0" layoutY="544.0" prefHeight="128.0" prefWidth="888.0"
+                           styleClass="inputContainer" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0"
+                           AnchorPane.topAnchor="434.0">
+                  <children>
+                     <Text layoutX="24.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date de Naissance"
+                           textAlignment="CENTER" AnchorPane.topAnchor="57.806640625">
+                        <font>
+                           <Font name="Roboto Light" size="25.0"/>
+                        </font>
+                     </Text>
+                     <DatePicker fx:id="dateNaiss" layoutX="378.0" layoutY="45.0" prefHeight="35.0" prefWidth="300.0"
+                                 promptText="Date de Naissance" AnchorPane.bottomAnchor="28.0"
+                                 AnchorPane.leftAnchor="378.0" AnchorPane.rightAnchor="194.0"
+                                 AnchorPane.topAnchor="45.0">
+                        <styleClass>
+                           <String fx:value="input"/>
+                           <String fx:value="date-picker"/>
+                        </styleClass>
+                     </DatePicker>
+               </children>
+            </AnchorPane>
+               <AnchorPane layoutX="18.0" layoutY="672.0" prefHeight="128.0" prefWidth="888.0"
+                           styleClass="inputContainer" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0"
+                           AnchorPane.topAnchor="562.0">
+                  <children>
+                     <Text layoutX="63.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse"
+                           textAlignment="CENTER">
+                        <font>
+                           <Font name="Roboto Light" size="25.0"/>
+                        </font>
+                     </Text>
+                     <TextField fx:id="adresse" layoutX="245.0" layoutY="39.0" prefHeight="35.0" prefWidth="359.0"
+                                promptText="Adresse" styleClass="input">
+                        <font>
+                           <Font name="Roboto Light" size="25.0"/>
+                        </font>
+                     </TextField>
+                     <TextField fx:id="zip" layoutX="633.0" layoutY="39.0" prefHeight="35.0" prefWidth="159.0" promptText="ZIP" styleClass="input">
+                        <font>
+                           <Font name="Roboto Light" size="25.0" />
+                        </font>
+                     </TextField>
+                  </children>
+               </AnchorPane>
+               <AnchorPane layoutX="18.0" layoutY="690.0" prefHeight="128.0" prefWidth="888.0"
+                           styleClass="inputContainer" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0">
+                  <children>
+                     <Text layoutX="82.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender"
+                           textAlignment="CENTER">
+                        <font>
+                           <Font name="Roboto Light" size="25.0"/>
+                        </font>
+                     </Text>
+                     <ChoiceBox fx:id="Gender" value="Homme" layoutX="306.0" layoutY="46.0" prefHeight="35.5"
+                                prefWidth="260.0" style="-fx-background-color: #dcdcdc;" styleClass="input"
+                                AnchorPane.leftAnchor="306.0" AnchorPane.topAnchor="46.0">
+                        <items>
+                           <FXCollections fx:factory="observableArrayList">
+                              <String fx:value="Homme"/>
+                              <String fx:value="Femme"/>
+                           </FXCollections>
+                        </items>
+                     </ChoiceBox>
+                  </children>
+               </AnchorPane>
+
+               <AnchorPane layoutX="26.0" layoutY="946.0" prefHeight="128.0" prefWidth="888.0"
+                           AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0">
+                  <children>
+                     <CheckBox fx:id="account" layoutX="94.0" layoutY="43.0" mnemonicParsing="false" prefHeight="45.0"
+                               prefWidth="259.0" text="Cet employé admet un compte" AnchorPane.bottomAnchor="50.0"
+                               AnchorPane.leftAnchor="94.0" AnchorPane.rightAnchor="535.0" AnchorPane.topAnchor="43.0">
+                        <font>
+                           <Font name="Roboto Condensed" size="15.0"/>
+                        </font>
+                     </CheckBox>
+                     <Button layoutX="640.0" layoutY="39.0" maxHeight="-Infinity" minHeight="-Infinity"
+                             mnemonicParsing="false" onAction="#add" prefHeight="54.0" prefWidth="179.0"
+                             styleClass="Addbtn" text="Ajouter" textFill="WHITE" AnchorPane.bottomAnchor="45.0"
+                             AnchorPane.leftAnchor="640.0" AnchorPane.rightAnchor="69.0" AnchorPane.topAnchor="39.0">
+                        <font>
+                           <Font name="Roboto Condensed" size="20.0"/>
+                        </font>
+                     </Button>
+                  </children>
+               </AnchorPane>
+          </children>
+         </AnchorPane>
+      </content>
+   </ScrollPane>
+   <ImageView fitHeight="30.0" fitWidth="106.0" layoutX="814.0" layoutY="878.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="4.55555534362793" AnchorPane.leftAnchor="796.0" AnchorPane.rightAnchor="22.0">
+      <image>
+         <Image url="@img/dash/eduspace.png" />
+      </image>
+   </ImageView>
+
+</AnchorPane>

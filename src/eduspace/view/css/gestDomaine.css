@@ -1,0 +1,72 @@
+#body{
+-fx-background-color: #E6E6E6;
+-fx-background-radius: 20px 0px 0px 20px;
+ -fx-border-radius: 20px 0px 0px 20px;
+
+}
+
+/*******Main Page*******/
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:  #343434;
+}
+.table-view .column-header .label{
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell{
+-fx-border-color: #343434;
+-fx-table-cell-border-color:#343434;
+}
+
+.table-view{
+-fx-border-color: #343434;
+}
+
+#Addbtn{
+-fx-background-color: #2871FA;
+-fx-background-radius: 10px;
+ -fx-border-radius: 10px;
+ -fx-padding: 12px;
+}
+#Addbtn:hover{
+-fx-background-color: #528DFC;
+-fx-cursor: hand;
+}
+/*******Ajout*******/
+#domainePane{
+-fx-background-color: #E6E6E6;
+-fx-border-width: 0 0 1 0;
+-fx-border-color: #343434;
+}
+.input{
+-fx-background-color: #E6E6E6;
+-fx-background-radius: 10px;
+-fx-border-width: 0 0 0.5 0;
+-fx-border-color: #343434;
+}
+.input:focused {
+-fx-border-width: 0 0 1 0;
+-fx-border-color: #2871FA;
+}
+
+.check-box .box {
+-fx-background-color: #E6E6E6;
+-fx-border-color:#343434;
+-fx-border-radius:5px;
+
+}
+
+.check-box:selected .mark {
+
+-fx-background-color: #E6E6E6;
+
+}
+
+.check-box:selected .box {
+
+-fx-background-color: #2871FA;
+}
+

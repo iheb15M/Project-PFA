@@ -1,0 +1,25 @@
+#alert{
+-fx-background-image: url("../img/alertBg.png");
+-fx-background-position: left top, center;
+-fx-background-repeat: no-repeat;
+-fx-background-size: cover, auto;
+}
+#info{
+-fx-background-image: url("../img/infoBg.png");
+-fx-background-position: left top, center;
+-fx-background-repeat: no-repeat;
+-fx-background-size: cover, auto;
+}
+#message{
+-fx-margin-left: auto;
+-fx-display: block;
+-fx-float: right;
+}
+
+#close{
+-fx-background-color:  #2871FA;
+-fx-background-radius: 18px;
+ -fx-border-radius: 18px;
+
+
+}
